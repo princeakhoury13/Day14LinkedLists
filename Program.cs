@@ -12,7 +12,7 @@
             list.PrintList();
 
 
-            int poppedValue = list.Pop();
+            int poppedValue = list.PopLast();
             
             list.PrintList();
 
