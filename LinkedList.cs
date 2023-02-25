@@ -122,5 +122,35 @@ namespace Day14LinkedList
 
             return false;
         }
+
+        public void Delete(int value)
+        {
+            if (Head == null)
+            {
+                throw new Exception("Cannot delete from an empty list.");
+            }
+            else if (Head.Data == value)
+            {
+                // If the value to delete is in the first node, just remove the first node.
+                Head = Head.Next;
+            }
+            else
+            {
+                // Traverse the list until we find the node before the one to delete.
+                Node current = Head;
+                while (current.Next != null && current.Next.Data != value)
+                {
+                    current = current.Next;
+                }
+
+                if (current.Next == null)
+                {
+                    throw new Exception("Value not found in list.");
+                }
+
+                // Remove the node with the matching value.
+                current.Next = current.Next.Next;
+            }
+        }
     }
 }
