@@ -12,9 +12,8 @@
             list.PrintList();
 
 
-            int poppedValue = list.PopLast();
-            
-            list.PrintList();
+            bool found = list.Search(30);
+            Console.WriteLine("Value 30 found: " + found);
 
 
         }
