@@ -12,8 +12,8 @@
             list.PrintList();
 
 
-            bool found = list.Search(30);
-            Console.WriteLine("Value 30 found: " + found);
+            list.Delete(70);
+            list.PrintList();
 
 
         }
