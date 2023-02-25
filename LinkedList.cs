@@ -105,5 +105,22 @@ namespace Day14LinkedList
                 return result;
             }
         }
+
+
+        public bool Search(int value)
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Data == value)
+                {
+                    return true;
+                }
+
+                current = current.Next;
+            }
+
+            return false;
+        }
     }
 }
