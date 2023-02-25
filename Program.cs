@@ -7,11 +7,16 @@
             LinkedList list = new LinkedList();
             list.Add(56);
             list.Add(70);
-            
+            list.Add(30);
+
             list.PrintList();
 
-            list.InsertAfter(56, 30);
+
+            int poppedValue = list.Pop();
+            Console.WriteLine("Popped The First Element : " + poppedValue);
             list.PrintList();
+
+
         }
     }
 }
