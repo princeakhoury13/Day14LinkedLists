@@ -12,8 +12,8 @@
             list.PrintList();
 
 
-            list.Delete(70);
-            list.PrintList();
+            int size = list.GetSize();
+            Console.WriteLine("Size of list: " + size);
 
 
         }
