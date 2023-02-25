@@ -60,5 +60,17 @@ namespace Day14LinkedList
                 current.Next = newNode;
             }
         }
+
+        public int Pop()
+        {
+            if (Head == null)
+            {
+                throw new Exception("Cannot pop from an empty list.");
+            }
+
+            int result = Head.Data;
+            Head = Head.Next;
+            return result;
+        }
     }
 }
