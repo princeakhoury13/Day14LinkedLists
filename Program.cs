@@ -13,7 +13,7 @@
 
 
             int poppedValue = list.Pop();
-            Console.WriteLine("Popped The First Element : " + poppedValue);
+            
             list.PrintList();
 
 
